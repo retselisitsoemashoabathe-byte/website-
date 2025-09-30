@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+     <nav><a href="index.html">HOME</a>
+		<a href="Traditional.html">TRADITIONAL CLOTHES</a>
+		<a href="Music.html">MUSIC & DANCE</a>
+		<a href="Art.html">CRAFTS & FEEDBACK</a>
+	</nav>
+</head>
+<body>
+<header class="contact-form-container">
+        <h1 class="page-header h1">Contact Us</h1>
+    </header>
+
+    <main class="contact-form label">
+        <form action="/submit-form" method="POST" >
+            <div>
+                <label for="name" >Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="contact-form input">
+                <label for="email" >Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <label for="topic">Topic of Interest</label>
+            <select id="topic" name="topic" required>
+                <option value="">Select Topic</option>
+                <option value="Traditinal">Traditional Clothes</option>
+                <option value="Music">Music</option>
+                <option value="Art">Crafts</option>
+                <option value="Dance">Dance</option>
+            </select><br>
+
+            <div class="contact-form textarea">
+                <label for="message" >Message:</label>
+                <textarea id="message" name="message" rows="5" ></textarea>
+            </div>
+
+            <div class="contact-form button">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </main>
